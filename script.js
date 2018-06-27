@@ -17,32 +17,32 @@ var Counter = React.createClass({
 	},
 	/**** OTHER COMPONENTS ****/
 	componentWillMount: function () {
-        console.log();
+        console.log('wywoływanie przed renderowaniem');
         
     },
 
     componentDidMount: function () {
-        console.log();
+        console.log('w chwili wykonania komponent istnieje już na stronie');
     },
 
     componentWillReceiveProps: function() {
-        console.log();
+        console.log('zostanie wywołana tylko wtedy, gdy komponent otrzyma nowe właściwości');
     },
 
     shouldComponentUpdate: function () {
-        console.log();
+        console.log('tuż przed wywołaniem metody render, sprawdza, czy faktycznie trzeba przerysować komponent');
     },
     
     componentWillUpdate: function() {
-        console.log();
+        console.log('zostaje wywołana jeśli shouldComponentUpdate zwróci wartość true');
     },
 
     componentDidUpdate: function() {
-        console.log();
+        console.log('możemy wykonać manipulacje DOM');
     },
 
     componentWillUnmount: function(){
-        console.log();
+        console.log('możemy usunąć nasłuchiwacze czy timery');
     },
  
 	render: function() {
