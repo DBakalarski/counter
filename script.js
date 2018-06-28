@@ -31,6 +31,7 @@ var Counter = React.createClass({
 
     shouldComponentUpdate: function () {
         console.log('tuż przed wywołaniem metody render, sprawdza, czy faktycznie trzeba przerysować komponent');
+        return true;
     },
     
     componentWillUpdate: function() {
